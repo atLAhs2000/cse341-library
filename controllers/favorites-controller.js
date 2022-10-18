@@ -12,7 +12,7 @@ const getBooks = async (req, res, next) => {
 
 //a function to post a new book listing
 const postBook = async (req, res) => {
-    // #swagger.description = 'post one book with information'
+    // #swagger.description = 'post one book listing'
     const book = {
         title: req.body.title,
         authors: req.body.authors,

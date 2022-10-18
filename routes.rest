@@ -7,8 +7,13 @@ content-type: application/json
 
 {
     "title": "The Hunger Games",
-    "authors": "Suzanne Collins",
+    "authors": ["Suzanne Collins"],
     "publishing": "9/14/2008",
     "language": "English",
     "genres": ["novel", "young adult fiction", "fiction", "drama"]
 }
+
+
+// PRODUCTION
+###
+GET https://cse341-library.onrender.com/favorites

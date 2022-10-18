@@ -4,8 +4,6 @@ const PORT = process.env.PORT || 3000;
 const connectDB = require('./DB/connection');
 const app = express();
 
-app.use('/', require('./routes'));
-
 app
     .use(bodyParser.json())
     .use((req, res, next) => {
