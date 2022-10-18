@@ -1,0 +1,20 @@
+{
+  "name": "cse341-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atLAhs2000/cse341-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atLAhs2000/cse341-library/issues"
+  },
+  "homepage": "https://github.com/atLAhs2000/cse341-library#readme"
+}
