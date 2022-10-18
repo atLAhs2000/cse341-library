@@ -2,6 +2,7 @@ const mongodb = require('../DB/connection');
 
 //get all items in database
 const getBooks = async (req, res, next) => {
+    // #swagger.description = 'list all books in DB'
     const result = await mongodb.getDB().db('library').collection('fav_books').find();
     result.toArray().then((listings) => {
         res.setHeader('Content-Type', 'application/json');
@@ -11,6 +12,7 @@ const getBooks = async (req, res, next) => {
 
 //a function to post a new book listing
 const postBook = async (req, res) => {
+    // #swagger.description = 'post one book with information'
     const book = {
         title: req.body.title,
         authors: req.body.authors,
