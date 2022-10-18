@@ -1,5 +1,4 @@
 const mongodb = require('../DB/connection');
-const ObjectId = require('mongodb').ObjectId;
 
 //get all items in database
 const getBooks = async (req, res, next) => {
@@ -11,7 +10,7 @@ const getBooks = async (req, res, next) => {
 };
 
 //a function to post a new book listing
-const postBook = async (req, res, next) => {
+const postBook = async (req, res) => {
     const book = {
         title: req.body.title,
         authors: req.body.authors,
@@ -26,5 +25,17 @@ const postBook = async (req, res, next) => {
         res.status(500).json(response.error || 'Error when creating book listing');
     }
 }
+
+/* POST format for books
+
+{
+    "title": "",
+    "authors": [],
+    "publishing": "",
+    "language": "",
+    "genres": []
+}
+
+*/
 
 module.exports = {getBooks, postBook};

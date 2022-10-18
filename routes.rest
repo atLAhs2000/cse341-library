@@ -1,0 +1,14 @@
+// LOCAL HOST DEV
+### Get all books
+GET http://localhost:3000/favorites
+### Post book listing
+POST http://localhost:3000/favorites HTTP/1.1
+content-type: application/json
+
+{
+    "title": "The Hunger Games",
+    "authors": ["Suzanne Collins"],
+    "publishing": "9/14/2008",
+    "language": "English",
+    "genres": ["novel", "young adult fiction", "fiction", "drama"]
+}
