@@ -14,7 +14,7 @@ content-type: application/json
 }
 
 ### Update a book listing entirely
-PUT http://localhost:3000/favorites/635492a483f944231c4bda92 HTTP/1.1
+PUT http://localhost:3000/favorites/6354b9b9f674abba111e8246 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,7 +26,7 @@ content-type: application/json
 }
 
 ### Update a book listing title
-PUT http://localhost:3000/favorites/update-title/635492a483f944231c4bda92 HTTP/1.1
+PUT http://localhost:3000/favorites/update-title/6354b9b9f674abba111e8246 HTTP/1.1
 content-type: application/json
 
 {
@@ -34,7 +34,7 @@ content-type: application/json
 }
 
 ### Delete an entire book listing
-DELETE http://localhost:3000/favorites/635492a483f944231c4bda92 HTTP/1.1
+DELETE http://localhost:3000/favorites/6354b9b9f674abba111e8246 HTTP/1.1
 
 // PRODUCTION
 ###
