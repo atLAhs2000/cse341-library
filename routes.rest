@@ -6,13 +6,35 @@ POST http://localhost:3000/favorites HTTP/1.1
 content-type: application/json
 
 {
-    "title": "The Hunger Games",
-    "authors": ["Suzanne Collins"],
-    "publishing": "9/14/2008",
+    "title": "A Testing Book",
+    "authors": ["Alyssa Lahoy", "Test Testerson"],
+    "publishing": "10/22/2022",
     "language": "English",
-    "genres": ["novel", "young adult fiction", "fiction", "drama"]
+    "genres": ["novel", "fiction", "tragedy", "drama"]
 }
 
+### Update a book listing entirely
+PUT http://localhost:3000/favorites/635492a483f944231c4bda92 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Update: A Test",
+    "authors": ["Alyssa Lahoy", "Test Testerson", "Checkster Test"],
+    "publishing": "10/21/2022",
+    "language": "English",
+    "genres": ["fiction", "tragedy", "drama"]
+}
+
+### Update a book listing title
+PUT http://localhost:3000/favorites/update-title/635492a483f944231c4bda92 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "How to Update: Title Ver."
+}
+
+### Delete an entire book listing
+DELETE http://localhost:3000/favorites/635492a483f944231c4bda92 HTTP/1.1
 
 // PRODUCTION
 ###

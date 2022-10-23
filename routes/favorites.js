@@ -7,4 +7,10 @@ router.get('/', favsController.getBooks);
 
 router.post('/', favsController.postBook);
 
+router.put('/:id', favsController.updateBook);
+
+router.put('/update-title/:id', favsController.updateTitle);
+
+router.delete('/:id', favsController.delBook);
+
 module.exports = router;
