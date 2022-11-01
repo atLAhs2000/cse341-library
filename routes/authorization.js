@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/login', (req, res) => {
-    res.send('login endpoint');
-});
+const AuthorizationController = require('../controllers/authorization.controller');
+
+router.get('/login', AuthorizationController.login);
 
 module.exports = router;
