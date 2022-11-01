@@ -36,6 +36,16 @@ content-type: application/json
 ### Delete an entire book listing
 DELETE http://localhost:3000/favorites/6354b9b9f674abba111e8246 HTTP/1.1
 
+
+
+//Auth0 requests
+### acquire code for authorization
+GET https://dev-aw6dgqrx2oi2y5at.us.auth0.com/authorize?response_type=code&client_id=AFtv3dWiURIKQCNsvn17lMQ9t6hOsxkr&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&state=1234&scope=openid%20profile%20email
+
+### acquire tokem
+POST https://dev-aw6dgqrx2oi2y5at.us.auth0.com/oauth/token?grant_type=authorization_code&client_id=AFtv3dWiURIKQCNsvn17lMQ9t6hOsxkr&client_secret=dcuddHo4o-405Emks0G_8XkvK1BEBgjOIeC4yYLiGp8fPa8WD-bbOO---fSFzzIS&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&scope=openid%20profile%20email&code=IkboZcZ6mArpHezKEjQAVSpitk1vIERA3XzDrNOXJc3BK
+
+
 // PRODUCTION
 ###
 GET https://cse341-library.onrender.com/favorites
